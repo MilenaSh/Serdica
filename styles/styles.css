@@ -1,5 +1,11 @@
 /* General Layout styles */
 
+html, body {
+    overflow: auto;
+background-color: #262626; 
+
+}
+
 .sc-main-wrapper {
 width: 100%;
 height: 100vh;
@@ -13,38 +19,104 @@ background-size: cover;
 
 /* Navigation styles */
 
-.sc-navigation-wrapper.row {
+.sc-navigation-wrapper {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100px;
+    height: auto;
     padding-top: 70px;
-    padding-left: 55px;
- 
+    padding-left: 75px;
+    padding-right: 60px;
 }
 
-.sc-navigation-wrapper .logo-container {
+.nav-inner-wrapper.row {
+    margin: 0;
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+.nav-inner-wrapper .logo-container {
 height: 68px;
+padding: 0;
 }
 
-.sc-navigation-wrapper .logo-container img {
+.nav-inner-wrapper .logo-container img {
     height: 100%;
-    width: 395px;
+    width: 390px;
     }
 
-.sc-navigation-wrapper .nav-buttons-wrapper {
+    .nav-inner-wrapper .nav-buttons-wrapper {
     display: flex;
     justify-content: flex-end;
     color: #ffffff;
     font-size: 3.7em;
     text-transform: uppercase;
     text-align: center;  
+
 }
 
-.sc-navigation-wrapper .nav-buttons-wrapper .nav-button {
+.nav-inner-wrapper .nav-inner-wrapper {
+}
+
+.nav-inner-wrapper .nav-buttons-wrapper .nav-button {
     padding: 6px 30px;
-    border: 1px solid white;   
-    margin-right: 37px;   
-    margin-top: 16px;
+    margin-right: 25px;   
+    margin-top: 15px;
+    letter-spacing: 1.1px;
 }
 
+.nav-inner-wrapper .nav-buttons-wrapper .nav-button.selected {
+    border: 1px solid white;   
+}
+
+.nav-inner-wrapper .nav-buttons-wrapper div:last-of-type{
+margin-right: 0;
+}
+
+/* Dashboard stats with icons */
+
+.sc-dashboard-statsOne-wrapper {
+    height: 430px;
+    padding: 72px 275px;
+    padding-bottom: 60px;
+}
+
+
+.sc-dashboard-statsOne-wrapper .stats-icons-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc-dashboard-statsOne-wrapper .stats-icons-wrapper .icon-container {
+    height: 100%;
+    width: 300px;
+    border: 1px solid white;
+}
+
+.stats-icons-wrapper .icon-container .stat-icon {
+    width: 100%;
+    height: 115px;
+}
+
+.stats-icons-wrapper .icon-container .stat-value {
+    width: 100%;
+    height: 115px;
+    color: #ffffff;
+    font-size: 10em;
+    font-weight: bolder;
+    line-height: 1em;
+    text-align: center;
+}
+
+.stats-icons-wrapper .icon-container .stat-title {
+    width: 100%;
+    height: 65px;   
+    color: #ffffff;  
+    font-size: 3.8em;
+    line-height: 1.2em;   
+    text-transform: uppercase;   
+    text-align: center;  
+    letter-spacing: 6px;
+}
