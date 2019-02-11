@@ -5,6 +5,7 @@ width: 100%;
 height: 100vh;
 background-color: #262626; 
 font-size: 10px;
+/*TODO - remove after editing */ 
 background-image: url(../images/SCREEN-1-preview.jpg);
 background-size: cover;
 
@@ -13,10 +14,12 @@ background-size: cover;
 /* Navigation styles */
 
 .sc-navigation-wrapper.row {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100px;
     padding-top: 70px;
-    margin: 0;
+    padding-left: 55px;
  
 }
 
@@ -25,19 +28,23 @@ height: 68px;
 }
 
 .sc-navigation-wrapper .logo-container img {
-    height: 100%
+    height: 100%;
+    width: 395px;
     }
 
 .sc-navigation-wrapper .nav-buttons-wrapper {
     display: flex;
     justify-content: flex-end;
     color: #ffffff;
-    font-size: 2.8em;
+    font-size: 3.7em;
     text-transform: uppercase;
     text-align: center;  
 }
 
 .sc-navigation-wrapper .nav-buttons-wrapper .nav-button {
-padding: 20px 30px;
+    padding: 6px 30px;
+    border: 1px solid white;   
+    margin-right: 37px;   
+    margin-top: 16px;
 }
 
