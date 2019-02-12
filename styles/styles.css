@@ -1,20 +1,122 @@
+/* Fonts */
+
+@font-face {
+    font-family: Geometria;
+    src: url("../fonts/Geometria.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaBold;
+    src: url("../fonts/Geometria-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaBoldItalic;
+    src: url("../fonts/Geometria-BoldItalic.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaExtraBlack;
+    src: url("../fonts/Geometria-ExtaBlack.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaExtraLight;
+    src: url("../fonts/Geometria-ExtraLight.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaLightItalic;
+    src: url("../fonts/Geometria-ExtraLightItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaHeavy;
+    src: url("../fonts/Geometria-Heavy.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaHeavyItalic;
+    src: url("../fonts/Geometria-HeavyItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaItalic;
+    src: url("../fonts/Geometria-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaLight;
+    src: url("../fonts/Geometria-Light.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaLightItalc;
+    src: url("../fonts/Geometria-LightItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaMedium;
+    src: url("../fonts/Geometria-Medium.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaMediumItalic;
+    src: url("../fonts/Geometria-MediumItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaThin;
+    src: url("../fonts/Geometria-Thin.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GeometriaThinItalic;
+    src: url("../fonts/Geometria-ThinItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* General Layout styles */
-
-html, body {
+html,
+body {
     overflow: auto;
-background-color: #262626; 
-
+    background-color: #262626;
 }
 
 .sc-main-wrapper {
-width: 100%;
-height: 100vh;
-background-color: #262626; 
-font-size: 10px;
-/*TODO - remove after editing */ 
-background-image: url(../images/SCREEN-1-preview.jpg);
-background-size: cover;
-
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    font-size: 10px;
 }
 
 /* Navigation styles */
@@ -32,46 +134,54 @@ background-size: cover;
 .nav-inner-wrapper.row {
     margin: 0;
     padding-bottom: 30px;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 .nav-inner-wrapper .logo-container {
-height: 68px;
-padding: 0;
+    height: 68px;
+    padding: 0;
 }
 
-.nav-inner-wrapper .logo-container img {
-    height: 100%;
-    width: 390px;
+    .nav-inner-wrapper .logo-container img {
+        height: 100%;
+        width: 390px;
     }
 
-    .nav-inner-wrapper .nav-buttons-wrapper {
+.nav-inner-wrapper .nav-buttons-wrapper {
     display: flex;
     justify-content: flex-end;
     color: #ffffff;
-    font-size: 3.7em;
+    font-family: Geometria;
+    font-size: 3.6em;
     text-transform: uppercase;
-    text-align: center;  
-
+    text-align: center;
 }
 
-.nav-inner-wrapper .nav-inner-wrapper {
-}
+    .nav-inner-wrapper .nav-buttons-wrapper .nav-button {
+        padding: 6px 30px;
+        margin-right: 18px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
 
-.nav-inner-wrapper .nav-buttons-wrapper .nav-button {
-    padding: 6px 30px;
-    margin-right: 25px;   
-    margin-top: 15px;
-    letter-spacing: 1.1px;
-}
+        .nav-inner-wrapper .nav-buttons-wrapper .nav-button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
 
-.nav-inner-wrapper .nav-buttons-wrapper .nav-button.selected {
-    border: 1px solid white;   
-}
+        .nav-inner-wrapper .nav-buttons-wrapper .nav-button.selected {
+            font-family: GeometriaBold;
+            border: 2px solid #afafaf;
+            background-color: #3a3a3a;
+        }
 
-.nav-inner-wrapper .nav-buttons-wrapper div:last-of-type{
-margin-right: 0;
-}
+    .nav-inner-wrapper .nav-buttons-wrapper div:last-of-type {
+        margin-right: 0;
+    }
+
+/* ***********************************************************
+Homepage styles 
+**************************************************************/
 
 /* Dashboard stats with icons */
 
@@ -81,42 +191,251 @@ margin-right: 0;
     padding-bottom: 60px;
 }
 
+    .sc-dashboard-statsOne-wrapper .stats-icons-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.sc-dashboard-statsOne-wrapper .stats-icons-wrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sc-dashboard-statsOne-wrapper .stats-icons-wrapper .icon-container {
-    height: 100%;
-    width: 300px;
-    border: 1px solid white;
-}
+        .sc-dashboard-statsOne-wrapper .stats-icons-wrapper .icon-container {
+            height: 100%;
+            width: 300px;
+            border: 1px solid white;
+        }
 
 .stats-icons-wrapper .icon-container .stat-icon {
     width: 100%;
     height: 115px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .stats-icons-wrapper .icon-container .stat-value {
     width: 100%;
     height: 115px;
     color: #ffffff;
+    font-family: GeometriaHeavy;
     font-size: 10em;
-    font-weight: bolder;
     line-height: 1em;
     text-align: center;
 }
 
 .stats-icons-wrapper .icon-container .stat-title {
     width: 100%;
-    height: 65px;   
-    color: #ffffff;  
-    font-size: 3.8em;
-    line-height: 1.2em;   
-    text-transform: uppercase;   
-    text-align: center;  
-    letter-spacing: 6px;
+    height: 65px;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 3.9em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Dashboard stats with graphs */
+
+.sc-dashboard-stats-graphs {
+    height: 385px;
+    width: 100%;
+    padding: 25px 9.4% 0 11.4%;
+    display: flex;
+    background-color: #6c6c6c;
+}
+
+    .sc-dashboard-stats-graphs .graphs-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .sc-dashboard-stats-graphs .graphs-wrapper div:last-of-type {
+            padding-top: 45px;
+        }
+
+/* Footer */
+
+.sc-footer {
+    width: 100%;
+    height: 60px;
+    background-color: #262626;
+}
+
+/*******************************************************************
+    Dialog page styles
+*******************************************************************/
+
+.sc-main-wrapper .dialog-tabs-wrapper {
+    padding: 60px 60px 0 73px;
+    font-family: Geometria;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.dialog-tabs-wrapper .nav.nav-tabs {
+    height: 115px;
+    color: #ffffff;
+    font-size: 3em;
+}
+
+.dialog-tabs-wrapper #dialogTabContent {
+    height: 632px;
+    border: 1px solid #fff;
+    background-color: #464646;
+    font-family: Geometria;
+    font-size: 3.4em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* Tab Buttons */
+
+.dialog-tabs-wrapper .nav-tabs .nav-item {
+    margin-right: 18px;
+}
+
+    .dialog-tabs-wrapper .nav-tabs .nav-item.show .nav-link,
+    .dialog-tabs-wrapper .nav-tabs .nav-link.active {
+        color: #ffffff;
+        background-color: #464646;
+        border-color: #ffffff;
+        height: 116px;
+        border-bottom: none;
+    }
+
+.dialog-tabs-wrapper .nav-item a {
+    width: 330px;
+    height: 93px;
+    border-color: #ffffff;
+    border-radius: 0;
+    background-color: #66bcc4;
+    color: #ffffff;
+    line-height: 1.1em;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+    .dialog-tabs-wrapper .nav-item a:hover {
+        background-color: #056e83;
+    }
+
+/* Tab content */
+
+/* First tab */
+
+.tab-content #first .image-container {
+    width: 302px;
+    margin: auto auto;
+    margin-top: 156px;
+}
+
+/* Second tab */
+
+.tab-content #second .file-upload-form {
+    width: 960px;
+    height: 95px;
+    margin-left: 436px;
+    margin-top: 214px;
+    padding: 14px;
+    background-color: #656565;
+}
+
+    .tab-content #second .file-upload-form label {
+        background-color: #056e83;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+.tab-content #second .confirmation-button {
+    width: 200px;
+    height: 70px;
+    margin: auto;
+    margin-top: 65px;
+    padding-top: 9px;
+    text-align: center;
+    background-color: #1aa2ac;
+    cursor: pointer;
+}
+
+/* Third tab */
+
+.tab-content #third .radio-buttons-form {
+    width: 270px;
+    line-height: 56px;
+    margin: auto;
+    margin-top: 197px;
+    font-size: 35px;
+    line-height: 31px;
+}
+
+.radio-buttons-form .submit-button {
+    width: 200px;
+    height: 70px;
+    margin-top: 60px;
+    margin-left: 22px;
+    border: none;
+    background-color: #1aa2ac;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 17px;
+}
+
+
+/* Custum radio buttons */
+.button-container {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+    text-align: right;
+    line-height: 26px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .button-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.button-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.button-container input:checked ~ .checkmark {
+    background-color: #ffffff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.button-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.button-container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
 }

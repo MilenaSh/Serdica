@@ -1,0 +1,49 @@
+<!-- In case the separate elements need to be used as partial ot element of a Layout
+NB: all scripts and styles need to be applied and the image paths must be checked.
+-->
+
+<div class="dialog-tabs-wrapper">
+    <ul class="nav nav-tabs" id="dialogTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first"
+                aria-selected="true">Conversation engine choice</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second"
+                aria-selected="false">Conversation configuration</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third"
+                aria-selected="false">Corpus definition</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="dialogTabContent">
+        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+            <div class="image-container">
+                <img src="images/screen-dialog-tab1.png" />
+            </div>
+        </div>
+        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+
+            <form class="file-upload-form" enctype="multipart/form-data" action="" method="post">
+                <input id="image-file" type="file" style="display:none;" />
+                <label class="" for="image-file">Choose file</label>
+                <span class="selected-image-display"></span>
+            </form>
+            <div class="confirmation-button">Confirm</div>
+        </div>
+        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+            <div class="radio-buttons-form">
+                <label class="button-container"><span>Option 1</span>
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="button-container"><span>Option 2</span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="submit-button" value="Button">Button</div>
+            </div>
+        </div>
+    </div>
+</div>

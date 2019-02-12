@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Serdica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="sc-main-wrapper">
+        <!-- Navigation -->
+        <div class="sc-navigation-wrapper">
+            <div class="nav-inner-wrapper row">
+                <div class="logo-container col col-lg-3 col-md-3 col-sm-3">
+                    <img src="images/sc-logo.png" />
+                </div>
+                <div class="nav-buttons-wrapper col col-lg-9">
+                    <div class="nav-button"><a href="index.html"><span>Home</span></a></div>
+                    <div class="nav-button selected"><a href="dialog.html"><span>Dialog</span></div>
+                    <div class="nav-button"><a href="#"><span>LCD</span></a></div>
+                    <div class="nav-button"><a href="#"><span>Knowledge</span></a></div>
+                    <div class="nav-button"><a href="#"><span>BPB</span></a></div>
+                    <div class="nav-button"><a href="#"><span>Analytics</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dialog wrapper -->
+
+        <div class="dialog-tabs-wrapper">
+            <ul class="nav nav-tabs" id="dialogTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first"
+                        aria-selected="true">Conversation engine choice</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second"
+                        aria-selected="false">Conversation configuration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third"
+                        aria-selected="false">Corpus definition</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="dialogTabContent">
+                <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                    <div class="image-container">
+                        <img src="images/screen-dialog-tab1.png" />
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+
+                    <form class="file-upload-form" enctype="multipart/form-data" action="" method="post">
+                        <input id="image-file" type="file" style="display:none;" />
+                        <label class="" for="image-file">Choose file</label>
+                        <span class="selected-image-display"></span>
+                    </form>
+                    <div class="confirmation-button">Confirm</div>
+                </div>
+                <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                    <div class="radio-buttons-form">
+                        <label class="button-container"><span>Option 1</span>
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="button-container"><span>Option 2</span>
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="submit-button" value="Button">Button</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc-footer"></div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+
+</html>
